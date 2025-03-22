@@ -23,7 +23,7 @@ const people = [
   {
     id: 1,
     name: "JOIN NOW",
-    designation: "How bout u join my fuqin waitlist 😂",
+    designation: "Join the waitlist for early access to MerchSpy! 🔥",
     image: "/img/email.png",
     href: "https://instagram.com/Joscriptt ",
   },
@@ -159,7 +159,7 @@ function PageHook() {
                     />
                   </span>
                   <span className="bg-clip-text text-transparent dark:bg-gradient-to-r bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-700">
-                    Templates & Resources!
+                    MerchSpy
                   </span>
                 </div>
               </div>
@@ -168,12 +168,11 @@ function PageHook() {
               </p> */}
             </div>
             <h1 className="text-3xl font-bold  sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent dark:bg-gradient-to-r bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-800 capitalize md:max-w-2xl lg:max-w-3xl mx-auto ">
-              Join The Waitlist for My Courses Today!
+              HERE'S THE THING YOU SAID YOU WANTED
             </h1>
             <p className="max-w-[600px]  leading-7 text-center text-[16px] bg-clip-text text-transparent dark:bg-gradient-to-br bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-700 mx-auto ">
-              Discover an Array of Incredible Courses and Be Prepared for an
-              Exciting Wave of New Resources on the Horizon. Sign up to Our
-              Waitlist to be notified when we launch!
+              Uncover trending designs, top-selling keywords, and competitor insights,
+              so you can create merch that actually sells.
             </p>
             {errors.email && (
               <p className="border dark:border-white/25 border-[#704705] flex gap-x-3 items-center p-2 pl-5 max-w-md bg-gradient-to-r from-10% dark:from-[#704705] text-[#3a2503] from-[#f5a524] via-30% dark:via-black dark:to-black to-100% to-[#704705] mx-auto rounded-md dark:text-white ">
@@ -301,14 +300,14 @@ function PageHook() {
           </div>
           <div className="p-3 rounded-lg border dark:border-white/10 border-neutral-400 dark:border-opacity-10 relative top-14 sm:top-14 lg:top-24 max-w-xl mx-auto flex flex-col lg:flex-row justify-between items-center text-sm">
             <p className=" text-zinc-500 dark:text-zinc-100">
-              Get ready to redefine your email experience.
+              You deserve to have the best on your side 🗿.
             </p>
             <Link
               onClick={() => setIsOpen(true)}
               className=" bg-zinc-700/30 lg:py-1 py-2 px-2 w-full lg:w-fit mt-3 md:mt-3 lg:mt-0 text-center rounded-md  text-white"
               href="/"
             >
-              <span>Terms & Conditions</span>
+              <span>Join to know why.</span>
             </Link>
             <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
             <RecievedModal
@@ -432,7 +431,7 @@ const RecievedModal = ({ isOpenModel, setIsOpenModel }) => {
                   onClick={() => setIsOpenModel(false)}
                   className=" flex justify-center gap-x-3 items-center bg-transparent bg-white text-black hover:bg-neutral-300  transition-colors duration-200 dark:text-black font-semibold w-60 mx-auto py-2 rounded px-8"
                 >
-                  <span>Happy Coding</span>
+                  <span>Happy Selling</span>
                   <Image
                     width={7}
                     height={7}

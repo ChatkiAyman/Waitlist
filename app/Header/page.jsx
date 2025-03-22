@@ -88,23 +88,23 @@ const people = [
   {
     id: 1,
     name: "INSTAGRAM",
-    designation: "@Joscriptt",
+    designation: "@MerchSpyApp",
     image: "/img/time.png",
-    href: "https://instagram.com/Joscriptt ",
+    href: "https://x.com/MerchSpyApp?t=4RttcOMWroZdCzRfmSTLFA&s=08",
   },
   {
     id: 2,
-    name: "TWITTER",
-    designation: "@Joenaldo",
+    name: "X/TWITTER",
+    designation: "@MerchSpyApp",
     image: "/img/alarm.png",
-    href: "https://twitter.com/Joenaldo",
+    href: "https://x.com/MerchSpyApp?t=4RttcOMWroZdCzRfmSTLFA&s=08",
   },
   {
     id: 3,
     name: "GITHUB",
-    designation: "Joscriptt",
+    designation: "MerchSpyApp",
     image: "/img/party.png",
-    href: "https://github.com/Joscriptt",
+    href: "https://x.com/MerchSpyApp?t=4RttcOMWroZdCzRfmSTLFA&s=08",
   },
 ];
 
@@ -145,7 +145,7 @@ function Headpage() {
         <div className="flex gap-x-3 items-center">
           <Switch checked={checked} setChecked={setChecked} />
           <p className="text-sm text-white hidden md:block">
-            Download as Template
+            Toggle Dark & Light Mode
           </p>
         </div>
 
