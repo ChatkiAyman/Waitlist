@@ -54,7 +54,7 @@ export default function PageHook() {
     }, 4000)
   }
 
-  const onSubmit = async (data) => {
+   const onSubmit = async (data) => {
     try {
       const res = await fetch("/api/email", {
         method: "POST",
