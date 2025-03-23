@@ -20,7 +20,7 @@ export async function POST(req) {
   await connectDB();
 
   try {
-    const email = await req.json();
+    const { email } = await req.json();
     if (!email) {
       return new NextResponse("Missing field", { status: 400 });
     }
@@ -33,26 +33,9 @@ export async function POST(req) {
 
     const newEmail = new Email({ email });
 
-    // Send a confirmation email
-    const mailOptions = {
-      from: process.env.EMAIL_USER, // sender address
-      to: email, // list of receivers
-      subject: "Confirmation Email", // Subject line
-      text: "Thank you for joining the waitlist!", // plain text body
-      html: "<h1>Thank you for joining the waitlist!</h1>", // html body
-    };
-
-    // Send the email
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        console.log("Error sending email:", error);
-      } else {
-        console.log("Email sent: " + info.response);
-      }
-    });
-
     // Save the email in the database
-    return NextResponse.json(await newEmail.save(), { status: 200 });
+    await newEmail.save();
+    return NextResponse.json({ message: "Email saved" }, { status: 200 });
   } catch (error) {
     console.log(error);
     return new NextResponse("Server error", { status: 500 });
